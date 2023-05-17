@@ -3,7 +3,7 @@ services:
     image: xdocker_cert
     volumes:
       - letsencrypt:/etc/letsencrypt
-      - selfca:/usr/local/etc/ca
+      - openssl:/etc/ssl
     tty: true
     stdin_open: true
     ports:
@@ -11,4 +11,5 @@ services:
 
 volumes:
   letsencrypt:
-  selfca:
+  openssl:
+

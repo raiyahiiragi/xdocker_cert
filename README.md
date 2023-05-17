@@ -25,7 +25,7 @@ Docker で Let's encrypt を利用するための certbot を運用しようと�
 インタラクティブで待機する形でコンテナが起動します
 コンソールで入って、あとはいつもの certbot で
 
-また、ローカル認証局を立てるための /usr/local/etc/ca にvolumes を切ってあります
+また、ローカル認証局を立てるための /etc/ssl にvolumes を切ってあります
 不要な場合は Dockerfile から削除してください
 
 ## 注意点
