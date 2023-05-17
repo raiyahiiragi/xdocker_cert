@@ -7,6 +7,15 @@ Docker で Let's encrypt を利用するための certbot を運用しようと�
 
 ## 導入
 
+### portainer.io を使う
+
+1. Images で Dockerfile を投入
+2. Stacks で 当リポジトリのURL を指定
+
+### サーバーコマンドを結構使う
+
+個人的に portainer.io を活用しているので、こちらの手順は参考まで
+
 1. Docker サーバー に Dockerfile をアップするか vi かなんかで貼り付け
 2. docker build . -t xdocker_cert:latest --no-cache
 3. Docker-compose.yml に書いてある内容で Docker-compose 実行
